@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="10dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/paperButton"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:onClick="paperBtn"
+        android:text="@string/paperButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spockButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rockButton"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/scissorsButton"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:onClick="scissorsBtn"
+        android:text="@string/scissorsButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <Button
+        android:id="@+id/rockButton"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:onClick="rockBtn"
+        android:text="@string/rockButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <Button
+        android:id="@+id/lizardButton"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:onClick="lihzardBtn"
+        android:text="@string/lizardButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/spockButton"
+        app:layout_constraintTop_toBottomOf="@+id/scissorsButton"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/spockButton"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:onClick="spokBtn"
+        android:text="@string/spockButton"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:onClick="btnStart"
+        android:text="@string/startButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="240dp"
+        android:layout_height="119dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spockButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

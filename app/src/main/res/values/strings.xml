@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">rps</string>
+    <string name="rockButton">КАМЕНЬ</string>
+    <string name="scissorsButton">ножницы</string>
+    <string name="paperButton">БУМАГА</string>
+    <string name="lizardButton">ЯЩЕРИЦА</string>
+    <string name="spockButton">СПОК</string>
+    <string name="startButton">ИГРА</string>
+</resources>
